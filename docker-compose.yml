@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  default:
+    build:
+      context: .
+    image: kavehs/node-awscli-yarn:latest
+#  nginx:
+#    build:
+#      dockerfile: Dockerfile-nginx
+#      context: ./
+#    image: 244571300187.dkr.ecr.ap-southeast-2.amazonaws.com/bluewhale-nginx:latest
+#    command: nginx -g "daemon off;"
+#    ports:
+#      - "80:80"
+#    links:
+#      - web:web
+#    cpu_shares: 100
+#    mem_limit: 131200000
+#    env_file:
+#      - .env
